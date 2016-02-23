@@ -111,7 +111,8 @@ get_filetype(Source) when is_list(Source) ->
         ".erl" when SecondExt =:= ".dtl" -> dtl;
         ".dtl" -> dtl;
         ".erl" -> erl;
-        ".ex" -> elixir
+        ".ex"  -> elixir;
+        ".clj" -> clj
     end.
 
 %% @private This will search back to find an appropriate include directory, by
